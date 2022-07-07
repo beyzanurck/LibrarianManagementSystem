@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem
 {
-    class User
+    public class User
     {
         public string firstName;
         public string lastName;
         public int password;
         public string email;
         public string adress;
+        public int id;
     }
 }

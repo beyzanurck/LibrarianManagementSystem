@@ -17,11 +17,28 @@ namespace LibraryManagementSystem
             InitializeComponent();
         }
 
+        Librarian librarian = new Librarian();
+        public static int currentUserID;
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            librarian.AddLibrarian();
+        }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmLibrarianMain frmLibrarianMain = new frmLibrarianMain();
-            frmLibrarianMain.Show();
-            //this.Close();
+            foreach (var item in Librarian.librarians)
+            {
+                if ((txtUsername.Text == item.firstName) && (txtPassword.Text == item.password.ToString()))
+                {
+                    currentUserID = item.id;
+
+                    frmLibrarianMain frmLibrarianMain = new frmLibrarianMain();
+                    frmLibrarianMain.Show();
+                    this.Hide();
+
+                    break;
+                }
+            }
         }
     }
 }

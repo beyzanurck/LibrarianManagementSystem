@@ -19,11 +19,8 @@ namespace LibraryManagementSystem
 
         private void btnLibAccount_Click(object sender, EventArgs e)
         {
-
             frmLibAccount frmLibAccount = new frmLibAccount() 
             { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-
-            frmLibAccount.MdiParent = this;
 
             this.pnlLibMain.Controls.Add(frmLibAccount);
             frmLibAccount.Show();

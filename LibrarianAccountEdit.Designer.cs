@@ -134,6 +134,7 @@
             this.btnLibEdit.TabIndex = 2;
             this.btnLibEdit.Text = "Save";
             this.btnLibEdit.UseVisualStyleBackColor = true;
+            this.btnLibEdit.Click += new System.EventHandler(this.btnLibEdit_Click);
             // 
             // frmLibAccountEdit
             // 
@@ -154,6 +155,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLibAccountEdit";
             this.Text = "Librarian Account Edit";
+            this.Load += new System.EventHandler(this.frmLibAccountEdit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

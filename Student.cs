@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem
 {
-    class Student: User
+    public class Student: User
     {
-        public int id;
         public List<Book> myItems;
     }
 }

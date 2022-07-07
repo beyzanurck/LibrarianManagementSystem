@@ -79,7 +79,6 @@
             this.Controls.Add(this.btnLibStudent);
             this.Controls.Add(this.btnLibBook);
             this.Controls.Add(this.btnLibAccount);
-            this.IsMdiContainer = true;
             this.Name = "frmLibrarianMain";
             this.Text = "Librarian Main Page";
             this.ResumeLayout(false);

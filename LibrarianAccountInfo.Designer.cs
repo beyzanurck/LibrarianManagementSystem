@@ -170,6 +170,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLibAccount";
             this.Text = "Librarian Account Info";
+            this.Load += new System.EventHandler(this.frmLibAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

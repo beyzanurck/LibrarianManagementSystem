@@ -22,5 +22,20 @@ namespace LibraryManagementSystem
 
         }
 
+        private void frmLibAccount_Load(object sender, EventArgs e)
+        {
+            foreach (var item in Librarian.librarians)
+            {
+                if (frmLogin.currentUserID == item.id)
+                {
+                    lblLibFirstInfo.Text = item.firstName;
+                    lblLibLastInfo.Text = item.lastName;
+                    lblLibEmailInfo.Text = item.email;
+                    lblLibAdressInfo.Text = item.adress;
+                    lblLibPasswordInfo.Text = item.password.ToString();
+                    break;
+                }
+            }
+        }
     }
 }
