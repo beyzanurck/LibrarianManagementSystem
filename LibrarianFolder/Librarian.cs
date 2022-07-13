@@ -21,8 +21,4 @@ namespace LibraryManagementSystem
             { firstName = "Mesih", lastName = "Content", email = "sarah@apl.com", adress = "Ames", password = 1235, id = 02 });
         }
     }
-
-  
-
-
 }

@@ -15,6 +15,14 @@ namespace LibraryManagementSystem
         public int renewedCount;
         public string publicationDate;
         public DateTime dueDate;
-        public DateTime checkedOutDate; 
+        public DateTime checkedOutDate;
+
+        public static List<Book> books = new List<Book>();
+
+        public void AddBook()
+        {
+            books.Add(new Book()
+            { name = "R.J.", authorName = "Wonder", barcodeNo = 001135226, quantity = 3, publicationDate = "February 2012" });
+        }
     }
 }

@@ -82,7 +82,7 @@
             this.Controls.Add(this.btnLibAccount);
             this.Name = "frmLibrarianMain";
             this.Text = "Librarian Main Page";
-            
+            this.Load += new System.EventHandler(this.frmLibrarianMain_Load);
             this.ResumeLayout(false);
 
         }

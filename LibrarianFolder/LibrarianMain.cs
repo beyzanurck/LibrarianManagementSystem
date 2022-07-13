@@ -19,6 +19,7 @@ namespace LibraryManagementSystem
             InitializeComponent();
         }
 
+        Book book = new Book();
         private void btnLibAccount_Click(object sender, EventArgs e)
         {
             ((Panel)Application.OpenForms["frmLibrarianMain"].Controls["pnlLibMain"]).Controls.Clear();
@@ -39,6 +40,11 @@ namespace LibraryManagementSystem
 
             this.pnlLibMain.Controls.Add(bookInfoFrm);
             bookInfoFrm.Show();
+        }
+
+        private void frmLibrarianMain_Load(object sender, EventArgs e)
+        {
+            book.AddBook();
         }
     }
 }

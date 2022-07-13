@@ -18,6 +18,7 @@ namespace LibraryManagementSystem.LibrarianFolder
         }
 
         DataTable table;
+
         private void frmLibBookInfo_Load(object sender, EventArgs e)
         {
             table = new DataTable();
@@ -28,7 +29,18 @@ namespace LibraryManagementSystem.LibrarianFolder
             table.Columns.Add("Quantity", typeof(int));
             table.Columns.Add("Barcode No", typeof(String));
 
-            dgwBookInfo.DataSource = table;
+            foreach (var item in Book.books)
+            {
+                table.Rows.Add(new object[] { item.authorName, item.name, item.publicationDate, item.quantity, item.barcodeNo });
+            }
+
+            dgwBookInfo.DataSource = table;            
+        }
+
+        private void btnNewBook_Click(object sender, EventArgs e)
+        {
+            frmLibrarianNewBook newBook = new frmLibrarianNewBook();
+            newBook.Show();
         }
     }
 }
