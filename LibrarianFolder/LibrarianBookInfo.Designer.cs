@@ -30,7 +30,6 @@
         {
             this.dgwBookInfo = new System.Windows.Forms.DataGridView();
             this.btnNewBook = new System.Windows.Forms.Button();
-            this.btnBookEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwBookInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,10 +40,11 @@
             this.dgwBookInfo.Name = "dgwBookInfo";
             this.dgwBookInfo.Size = new System.Drawing.Size(518, 227);
             this.dgwBookInfo.TabIndex = 0;
+            this.dgwBookInfo.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwBookInfo_CellDoubleClick);
             // 
             // btnNewBook
             // 
-            this.btnNewBook.Location = new System.Drawing.Point(361, 257);
+            this.btnNewBook.Location = new System.Drawing.Point(455, 257);
             this.btnNewBook.Name = "btnNewBook";
             this.btnNewBook.Size = new System.Drawing.Size(75, 23);
             this.btnNewBook.TabIndex = 1;
@@ -52,21 +52,11 @@
             this.btnNewBook.UseVisualStyleBackColor = true;
             this.btnNewBook.Click += new System.EventHandler(this.btnNewBook_Click);
             // 
-            // btnBookEdit
-            // 
-            this.btnBookEdit.Location = new System.Drawing.Point(455, 257);
-            this.btnBookEdit.Name = "btnBookEdit";
-            this.btnBookEdit.Size = new System.Drawing.Size(75, 23);
-            this.btnBookEdit.TabIndex = 1;
-            this.btnBookEdit.Text = "Edit";
-            this.btnBookEdit.UseVisualStyleBackColor = true;
-            // 
             // frmLibBookInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 292);
-            this.Controls.Add(this.btnBookEdit);
             this.Controls.Add(this.btnNewBook);
             this.Controls.Add(this.dgwBookInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -80,8 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgwBookInfo;
+        public System.Windows.Forms.DataGridView dgwBookInfo;
         private System.Windows.Forms.Button btnNewBook;
-        private System.Windows.Forms.Button btnBookEdit;
     }
 }

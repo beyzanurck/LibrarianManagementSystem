@@ -18,6 +18,7 @@ namespace LibraryManagementSystem.LibrarianFolder
         }
 
         DataTable table;
+        public static int selectedRow = 0;
 
         private void frmLibBookInfo_Load(object sender, EventArgs e)
         {
@@ -31,7 +32,7 @@ namespace LibraryManagementSystem.LibrarianFolder
 
             foreach (var item in Book.books)
             {
-                table.Rows.Add(new object[] { item.authorName, item.name, item.publicationDate, item.quantity, item.barcodeNo });
+                table.Rows.Add(new object[] { item.name, item.authorName, item.publicationDate, item.quantity, item.barcodeNo });
             }
 
             dgwBookInfo.DataSource = table;            
@@ -41,6 +42,20 @@ namespace LibraryManagementSystem.LibrarianFolder
         {
             frmLibrarianNewBook newBook = new frmLibrarianNewBook();
             newBook.Show();
+        }
+
+        private void dgwBookInfo_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frmLibBookEdit bookEditing = new frmLibBookEdit();
+
+            selectedRow = e.RowIndex;
+
+            bookEditing.txtEditName.Text = dgwBookInfo.Rows[e.RowIndex].Cells[0].Value.ToString();
+            bookEditing.txtEditAuthorNa.Text = dgwBookInfo.Rows[e.RowIndex].Cells[1].Value.ToString();
+            bookEditing.dateTimeEdit.Value = (DateTime)dgwBookInfo.Rows[e.RowIndex].Cells[2].Value;
+            bookEditing.txtQuantityEdit.Text = dgwBookInfo.Rows[e.RowIndex].Cells[3].Value.ToString();
+            bookEditing.txtEditBarcode.Text = dgwBookInfo.Rows[e.RowIndex].Cells[4].Value.ToString();
+            bookEditing.Show();
         }
     }
 }

@@ -59,6 +59,12 @@
     <Compile Include="LibrarianFolder\LibrarianAccountInfo.Designer.cs">
       <DependentUpon>LibrarianAccountInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="LibrarianFolder\LibrarianBookEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrarianFolder\LibrarianBookEdit.Designer.cs">
+      <DependentUpon>LibrarianBookEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="LibrarianFolder\LibrarianBookInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LibrarianFolder\LibrarianAccountInfo.resx">
       <DependentUpon>LibrarianAccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrarianFolder\LibrarianBookEdit.resx">
+      <DependentUpon>LibrarianBookEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LibrarianFolder\LibrarianBookInfo.resx">
       <DependentUpon>LibrarianBookInfo.cs</DependentUpon>
