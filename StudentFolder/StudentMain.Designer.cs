@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.onlStudentMain = new System.Windows.Forms.Panel();
+            this.pnlStudentMain = new System.Windows.Forms.Panel();
             this.btnStudentAccount = new System.Windows.Forms.Button();
             this.btnStuMyIteims = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // onlStudentMain
+            // pnlStudentMain
             // 
-            this.onlStudentMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.onlStudentMain.Location = new System.Drawing.Point(27, 58);
-            this.onlStudentMain.Name = "onlStudentMain";
-            this.onlStudentMain.Size = new System.Drawing.Size(542, 292);
-            this.onlStudentMain.TabIndex = 0;
+            this.pnlStudentMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlStudentMain.Location = new System.Drawing.Point(27, 58);
+            this.pnlStudentMain.Name = "pnlStudentMain";
+            this.pnlStudentMain.Size = new System.Drawing.Size(542, 292);
+            this.pnlStudentMain.TabIndex = 0;
             // 
             // btnStudentAccount
             // 
@@ -49,6 +49,7 @@
             this.btnStudentAccount.TabIndex = 1;
             this.btnStudentAccount.Text = "Account";
             this.btnStudentAccount.UseVisualStyleBackColor = true;
+            this.btnStudentAccount.Click += new System.EventHandler(this.btnStudentAccount_Click);
             // 
             // btnStuMyIteims
             // 
@@ -66,7 +67,7 @@
             this.ClientSize = new System.Drawing.Size(592, 362);
             this.Controls.Add(this.btnStuMyIteims);
             this.Controls.Add(this.btnStudentAccount);
-            this.Controls.Add(this.onlStudentMain);
+            this.Controls.Add(this.pnlStudentMain);
             this.Name = "frmStudentMain";
             this.Text = "Student Main Page";
             this.ResumeLayout(false);
@@ -75,7 +76,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel onlStudentMain;
+        private System.Windows.Forms.Panel pnlStudentMain;
         private System.Windows.Forms.Button btnStudentAccount;
         private System.Windows.Forms.Button btnStuMyIteims;
     }

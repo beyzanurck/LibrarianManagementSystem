@@ -15,10 +15,10 @@ namespace LibraryManagementSystem
         public void AddStudent()
         {
             students.Add(new Student()
-            { firstName = "Beyza", lastName = "Kilinc", email = "beyza@gmail.com", adress = "Ames", password = 1234, id = 001 });
+            { firstName = "Beyza", lastName = "Kilinc", email = "beyza@gmail.com", adress = "Suv 27", password = 1234, id = 112250 });
 
             students.Add(new Student()
-            { firstName = "Sooyoung", lastName = "Kwak", email = "sooyoung@gmail.com", adress = "Ames", password = 1235, id = 002 });
+            { firstName = "Sooyoung", lastName = "Kwak", email = "sooyoung@gmail.com", adress = "Suv 46", password = 1235, id = 113254 });
         }
     }
 }

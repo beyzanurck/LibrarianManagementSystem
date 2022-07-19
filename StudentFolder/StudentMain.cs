@@ -16,5 +16,16 @@ namespace LibraryManagementSystem.StudentFolder
         {
             InitializeComponent();
         }
+
+        private void btnStudentAccount_Click(object sender, EventArgs e)
+        {
+            ((Panel)Application.OpenForms["frmStudentMain"].Controls["pnlStudentMain"]).Controls.Clear();
+
+            frmStudentAccountInfo frmStudentAccountInfo = new frmStudentAccountInfo()
+            { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+
+            this.pnlStudentMain.Controls.Add(frmStudentAccountInfo);
+            frmStudentAccountInfo.Show();    
+        }
     }
 }

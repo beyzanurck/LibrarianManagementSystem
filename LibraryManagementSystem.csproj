@@ -93,6 +93,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StudentFolder\Student.cs" />
+    <Compile Include="StudentFolder\StudentAccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFolder\StudentAccountInfo.Designer.cs">
+      <DependentUpon>StudentAccountInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentFolder\StudentMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentFolder\StudentAccountInfo.resx">
+      <DependentUpon>StudentAccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentFolder\StudentMain.resx">
       <DependentUpon>StudentMain.cs</DependentUpon>
     </EmbeddedResource>
