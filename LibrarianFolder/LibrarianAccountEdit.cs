@@ -31,8 +31,7 @@ namespace LibraryManagementSystem
                     txtPassEdit.Text = item.password.ToString();
                     id = item.id;
                     break;
-                }
-               
+                }               
             }
         }
 

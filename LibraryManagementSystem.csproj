@@ -99,6 +99,18 @@
     <Compile Include="StudentFolder\StudentAccountInfo.Designer.cs">
       <DependentUpon>StudentAccountInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentFolder\StudentBooksList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFolder\StudentBooksList.Designer.cs">
+      <DependentUpon>StudentBooksList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFolder\StudentEditing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFolder\StudentEditing.Designer.cs">
+      <DependentUpon>StudentEditing.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentFolder\StudentMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +150,12 @@
     </Compile>
     <EmbeddedResource Include="StudentFolder\StudentAccountInfo.resx">
       <DependentUpon>StudentAccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentFolder\StudentBooksList.resx">
+      <DependentUpon>StudentBooksList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentFolder\StudentEditing.resx">
+      <DependentUpon>StudentEditing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentFolder\StudentMain.resx">
       <DependentUpon>StudentMain.cs</DependentUpon>

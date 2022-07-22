@@ -52,6 +52,7 @@
             this.btnStuAccountEdit.TabIndex = 0;
             this.btnStuAccountEdit.Text = "Edit";
             this.btnStuAccountEdit.UseVisualStyleBackColor = true;
+            this.btnStuAccountEdit.Click += new System.EventHandler(this.btnStuAccountEdit_Click);
             // 
             // label1
             // 

@@ -31,6 +31,7 @@
             this.pnlStudentMain = new System.Windows.Forms.Panel();
             this.btnStudentAccount = new System.Windows.Forms.Button();
             this.btnStuMyIteims = new System.Windows.Forms.Button();
+            this.btnStudentBooks = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pnlStudentMain
@@ -60,16 +61,28 @@
             this.btnStuMyIteims.Text = "My Items";
             this.btnStuMyIteims.UseVisualStyleBackColor = true;
             // 
+            // btnStudentBooks
+            // 
+            this.btnStudentBooks.Location = new System.Drawing.Point(494, 12);
+            this.btnStudentBooks.Name = "btnStudentBooks";
+            this.btnStudentBooks.Size = new System.Drawing.Size(75, 23);
+            this.btnStudentBooks.TabIndex = 2;
+            this.btnStudentBooks.Text = "Books";
+            this.btnStudentBooks.UseVisualStyleBackColor = true;
+            this.btnStudentBooks.Click += new System.EventHandler(this.btnStudentBooks_Click);
+            // 
             // frmStudentMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 362);
+            this.Controls.Add(this.btnStudentBooks);
             this.Controls.Add(this.btnStuMyIteims);
             this.Controls.Add(this.btnStudentAccount);
             this.Controls.Add(this.pnlStudentMain);
             this.Name = "frmStudentMain";
             this.Text = "Student Main Page";
+            this.Load += new System.EventHandler(this.frmStudentMain_Load);
             this.ResumeLayout(false);
 
         }
@@ -79,5 +92,6 @@
         private System.Windows.Forms.Panel pnlStudentMain;
         private System.Windows.Forms.Button btnStudentAccount;
         private System.Windows.Forms.Button btnStuMyIteims;
+        private System.Windows.Forms.Button btnStudentBooks;
     }
 }

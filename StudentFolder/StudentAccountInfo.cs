@@ -33,5 +33,16 @@ namespace LibraryManagementSystem.StudentFolder
                 }
             }
         }
+
+        private void btnStuAccountEdit_Click(object sender, EventArgs e)
+        {
+            ((Panel)Application.OpenForms["frmStudentMain"].Controls["pnlStudentMain"]).Controls.Clear();
+
+            frmStudentEditing frmStudentEditing = new frmStudentEditing()
+            { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+
+            ((Panel)Application.OpenForms["frmStudentMain"].Controls["pnlStudentMain"]).Controls.Add(frmStudentEditing);
+            frmStudentEditing.Show();
+        }
     }
 }
