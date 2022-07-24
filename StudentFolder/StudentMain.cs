@@ -43,6 +43,7 @@ namespace LibraryManagementSystem.StudentFolder
 
         private void frmStudentMain_Load(object sender, EventArgs e)
         {
+            Book.books.Clear();
             book.AddBook();
         }
 
@@ -55,6 +56,13 @@ namespace LibraryManagementSystem.StudentFolder
 
             this.pnlStudentMain.Controls.Add(frmStudentMyItemsPage);
             frmStudentMyItemsPage.Show();
+        }
+
+        private void btnStudentLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
         }
     }
 }
