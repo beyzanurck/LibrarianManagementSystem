@@ -32,6 +32,7 @@
             this.btnLibBook = new System.Windows.Forms.Button();
             this.btnLibStudent = new System.Windows.Forms.Button();
             this.pnlLibMain = new System.Windows.Forms.Panel();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLibAccount
@@ -72,11 +73,22 @@
             this.pnlLibMain.Size = new System.Drawing.Size(542, 292);
             this.pnlLibMain.TabIndex = 1;
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Location = new System.Drawing.Point(489, 12);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(75, 23);
+            this.btnLogOut.TabIndex = 2;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // frmLibrarianMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 362);
+            this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.pnlLibMain);
             this.Controls.Add(this.btnLibStudent);
             this.Controls.Add(this.btnLibBook);
@@ -94,5 +106,6 @@
         private System.Windows.Forms.Button btnLibBook;
         private System.Windows.Forms.Button btnLibStudent;
         private System.Windows.Forms.Panel pnlLibMain;
+        private System.Windows.Forms.Button btnLogOut;
     }
 }

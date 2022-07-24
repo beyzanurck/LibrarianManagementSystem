@@ -57,5 +57,18 @@ namespace LibraryManagementSystem
             this.pnlLibMain.Controls.Add(frmStudentInfo);
             frmStudentInfo.Show();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (frm.Visible == false && frm.Name == "frmLogin")
+                {
+                    frm.Visible = true;
+                }
+            }
+        }
     }
 }
