@@ -77,6 +77,24 @@
     <Compile Include="LibrarianFolder\LibrarianNewBook.Designer.cs">
       <DependentUpon>LibrarianNewBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="LibrarianFolder\LibrarianNewStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrarianFolder\LibrarianNewStudent.Designer.cs">
+      <DependentUpon>LibrarianNewStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianFolder\LibrarianStudentBookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrarianFolder\LibrarianStudentBookInfo.Designer.cs">
+      <DependentUpon>LibrarianStudentBookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianFolder\LibrarianStudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrarianFolder\LibrarianStudentInfo.Designer.cs">
+      <DependentUpon>LibrarianStudentInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +156,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LibrarianFolder\LibrarianNewBook.resx">
       <DependentUpon>LibrarianNewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrarianFolder\LibrarianNewStudent.resx">
+      <DependentUpon>LibrarianNewStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrarianFolder\LibrarianStudentBookInfo.resx">
+      <DependentUpon>LibrarianStudentBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrarianFolder\LibrarianStudentInfo.resx">
+      <DependentUpon>LibrarianStudentInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

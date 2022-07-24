@@ -62,6 +62,7 @@
             this.btnLibStudent.TabIndex = 0;
             this.btnLibStudent.Text = "Students";
             this.btnLibStudent.UseVisualStyleBackColor = true;
+            this.btnLibStudent.Click += new System.EventHandler(this.btnLibStudent_Click);
             // 
             // pnlLibMain
             // 

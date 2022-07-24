@@ -46,5 +46,16 @@ namespace LibraryManagementSystem
         {
             book.AddBook();
         }
+
+        private void btnLibStudent_Click(object sender, EventArgs e)
+        {
+            ((Panel)Application.OpenForms["frmLibrarianMain"].Controls["pnlLibMain"]).Controls.Clear();
+            
+            LibrarianFolder.frmLibrarianStudentInfo frmStudentInfo = new LibrarianFolder.frmLibrarianStudentInfo
+            { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+
+            this.pnlLibMain.Controls.Add(frmStudentInfo);
+            frmStudentInfo.Show();
+        }
     }
 }
