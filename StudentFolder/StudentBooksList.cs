@@ -36,5 +36,21 @@ namespace LibraryManagementSystem.StudentFolder
 
             dgvStudentBookList.DataSource = table;
         }
+
+
+        private void dgvStudentBookList_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            Student.myItems.Add(new Book()
+            {
+                name = dgvStudentBookList.Rows[e.RowIndex].Cells[0].Value.ToString(),
+                authorName = dgvStudentBookList.Rows[e.RowIndex].Cells[1].Value.ToString(),
+                barcodeNo = Convert.ToInt32(dgvStudentBookList.Rows[e.RowIndex].Cells[4].Value),
+                checkedOutDate = DateTime.Today,
+                dueDate = DateTime.Today.AddDays(21),
+                renewedCount = 0
+            });
+
+            MessageBox.Show("The book has been added in your items");
+        }
     }
 }

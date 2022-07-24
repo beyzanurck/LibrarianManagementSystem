@@ -32,6 +32,7 @@
             this.btnStudentAccount = new System.Windows.Forms.Button();
             this.btnStuMyIteims = new System.Windows.Forms.Button();
             this.btnStudentBooks = new System.Windows.Forms.Button();
+            this.btnStudentLogOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pnlStudentMain
@@ -60,10 +61,11 @@
             this.btnStuMyIteims.TabIndex = 1;
             this.btnStuMyIteims.Text = "My Items";
             this.btnStuMyIteims.UseVisualStyleBackColor = true;
+            this.btnStuMyIteims.Click += new System.EventHandler(this.btnStuMyIteims_Click);
             // 
             // btnStudentBooks
             // 
-            this.btnStudentBooks.Location = new System.Drawing.Point(494, 12);
+            this.btnStudentBooks.Location = new System.Drawing.Point(189, 12);
             this.btnStudentBooks.Name = "btnStudentBooks";
             this.btnStudentBooks.Size = new System.Drawing.Size(75, 23);
             this.btnStudentBooks.TabIndex = 2;
@@ -71,11 +73,21 @@
             this.btnStudentBooks.UseVisualStyleBackColor = true;
             this.btnStudentBooks.Click += new System.EventHandler(this.btnStudentBooks_Click);
             // 
+            // btnStudentLogOut
+            // 
+            this.btnStudentLogOut.Location = new System.Drawing.Point(494, 12);
+            this.btnStudentLogOut.Name = "btnStudentLogOut";
+            this.btnStudentLogOut.Size = new System.Drawing.Size(75, 23);
+            this.btnStudentLogOut.TabIndex = 3;
+            this.btnStudentLogOut.Text = "Log out";
+            this.btnStudentLogOut.UseVisualStyleBackColor = true;
+            // 
             // frmStudentMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 362);
+            this.Controls.Add(this.btnStudentLogOut);
             this.Controls.Add(this.btnStudentBooks);
             this.Controls.Add(this.btnStuMyIteims);
             this.Controls.Add(this.btnStudentAccount);
@@ -93,5 +105,6 @@
         private System.Windows.Forms.Button btnStudentAccount;
         private System.Windows.Forms.Button btnStuMyIteims;
         private System.Windows.Forms.Button btnStudentBooks;
+        private System.Windows.Forms.Button btnStudentLogOut;
     }
 }

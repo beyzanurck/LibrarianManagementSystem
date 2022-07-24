@@ -39,6 +39,7 @@
             this.dgvStudentBookList.Name = "dgvStudentBookList";
             this.dgvStudentBookList.Size = new System.Drawing.Size(516, 266);
             this.dgvStudentBookList.TabIndex = 0;
+            this.dgvStudentBookList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudentBookList_CellDoubleClick_1);
             // 
             // frmStudentBooksList
             // 

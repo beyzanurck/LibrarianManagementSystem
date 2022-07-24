@@ -117,6 +117,12 @@
     <Compile Include="StudentFolder\StudentMain.Designer.cs">
       <DependentUpon>StudentMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentFolder\StudentMyItemsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFolder\StudentMyItemsPage.Designer.cs">
+      <DependentUpon>StudentMyItemsPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="LibrarianFolder\LibrarianAccountEdit.resx">
       <DependentUpon>LibrarianAccountEdit.cs</DependentUpon>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentFolder\StudentMain.resx">
       <DependentUpon>StudentMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentFolder\StudentMyItemsPage.resx">
+      <DependentUpon>StudentMyItemsPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

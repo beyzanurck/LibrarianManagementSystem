@@ -45,5 +45,16 @@ namespace LibraryManagementSystem.StudentFolder
         {
             book.AddBook();
         }
+
+        private void btnStuMyIteims_Click(object sender, EventArgs e)
+        {
+            ((Panel)Application.OpenForms["frmStudentMain"].Controls["pnlStudentMain"]).Controls.Clear();
+
+            frmStudentMyItemsPage frmStudentMyItemsPage = new frmStudentMyItemsPage()
+            { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+
+            this.pnlStudentMain.Controls.Add(frmStudentMyItemsPage);
+            frmStudentMyItemsPage.Show();
+        }
     }
 }

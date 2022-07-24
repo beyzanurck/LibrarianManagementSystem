@@ -22,7 +22,22 @@ namespace LibraryManagementSystem
         public void AddBook()
         {
             books.Add(new Book()
-            { name = "R.J.", authorName = "Wonder", barcodeNo = 001135226, quantity = 3, publicationDate = "February 2012" });
+            { name = "Wonder", authorName = "R.J.", barcodeNo = 001135226, quantity = 3, publicationDate = " January 2012" });
+
+            books.Add(new Book()
+            { name = "Digital Minimalism", authorName = "Cal Newport", barcodeNo = 001135227, quantity = 5, publicationDate = " February 2016" });
+
+            books.Add(new Book()
+            { name = "Presence", authorName = "Amy Cuddy", barcodeNo = 001135228, quantity = 4, publicationDate = "March 2015" });
+
+            books.Add(new Book()
+            { name = "Time management", authorName = "Brian Tracy", barcodeNo = 001135229, quantity = 2, publicationDate = "April 2013" }); 
+
+            books.Add(new Book()
+            { name = "Harry Potter 1", authorName = "J.K. Rowling", barcodeNo = 001135229, quantity = 10, publicationDate = "May 2000" });
+
+            books.Add(new Book()
+            { name = "Harry Potter 2", authorName = "J.K. Rowling", barcodeNo = 001135229, quantity = 10, publicationDate = "Jun 2000" });
         }
     }
 }

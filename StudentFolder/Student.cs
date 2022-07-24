@@ -8,7 +8,7 @@ namespace LibraryManagementSystem
 {
     public class Student: User
     {
-        public List<Book> myItems;
+        public static List<Book> myItems = new List<Book>();
 
         public static List<Student> students = new List<Student>();
 
