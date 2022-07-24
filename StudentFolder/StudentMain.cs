@@ -61,8 +61,14 @@ namespace LibraryManagementSystem.StudentFolder
         private void btnStudentLogOut_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmLogin frmLogin = new frmLogin();
-            frmLogin.Show();
+
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (frm.Visible == false && frm.Name == "frmLogin")
+                {
+                    frm.Visible = true;
+                }
+            }
         }
     }
 }

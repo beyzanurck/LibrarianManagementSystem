@@ -51,7 +51,7 @@ namespace LibraryManagementSystem
 
                     StudentFolder.frmStudentMain studentMain = new StudentFolder.frmStudentMain();
                     studentMain.Show();
-                    this.Hide();
+                    this.Visible = false;
 
                     break;
                 }
