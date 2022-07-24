@@ -44,6 +44,7 @@ namespace LibraryManagementSystem
 
         private void frmLibrarianMain_Load(object sender, EventArgs e)
         {
+            Book.books.Clear();
             book.AddBook();
         }
 
