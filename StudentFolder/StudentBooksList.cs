@@ -50,7 +50,7 @@ namespace LibraryManagementSystem.StudentFolder
                 renewedCount = 0
             });
 
-            MessageBox.Show("The book has been added in your items");
+            MessageBox.Show("The book has been added in your account");
         }
     }
 }

@@ -18,7 +18,7 @@ namespace LibraryManagementSystem
             { firstName = "Sarah", lastName = "Content", email = "sarah@apl.com", adress = "Ames", password = 1234, id = 01 });
 
             librarians.Add(new Librarian()
-            { firstName = "Mesih", lastName = "Content", email = "sarah@apl.com", adress = "Ames", password = 1235, id = 02 });
+            { firstName = "Kay", lastName = "Kay", email = "sarah@apl.com", adress = "Ames", password = 1235, id = 02 });
         }
     }
 }
